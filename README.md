@@ -8,16 +8,16 @@
 
 # 单个url操作命令
 
-follow.py -u https://www.baidu.com    # 单个url爬取
+follow.py -u https://www.baidu.com                                           # 单个url爬取
 
-follow.py -u https://www.baidu.com  --proxy  http://127.0.0.1:8080  # 单个url爬取 并使用代理 
+follow.py -u https://www.baidu.com  --proxy  http://127.0.0.1:8080           # 单个url爬取 并使用代理 
 
-follow.py -u https://www.baidu.com  --proxy  http://127.0.0.1:8080 --xray D:\xray\xray.exe   # 单个url爬取 并使用代理 自动启动xray
+follow.py -u https://www.baidu.com  --proxy  http://127.0.0.1:8080 --xray D:\xray\xray.exe       # 单个url爬取 并使用代理 自动启动xray
 
 # 批量操作命令 
 
-follow.py -f D:\url.txt  # 导入文本进行批量爬取
+follow.py -f D:\url.txt                                                       # 导入文本进行批量爬取
 
-follow.py -f D:\url.txt --proxy http://127.0.0.1:8080 # 导入文本 平且使用代理
+follow.py -f D:\url.txt --proxy http://127.0.0.1:8080                         # 导入文本 平且使用代理
 
 follow.py -f D:\url.txt --proxy http://127.0.0.1:8080 --xray D:\xray\xray.exe # 导入文本 平且使用代理 自动启动xray
