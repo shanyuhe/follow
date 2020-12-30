@@ -66,7 +66,7 @@ def rqueset(url):
         user_list.append(name_url)
         url_bool = apk_exe(url)
         if url_bool == False:
-            html_text = requests.get(url=url, headers=header,timeout=5,proxies=proxies,verify=False)
+            html_text = requests.get(url=url, headers=header,timeout=10,proxies=proxies,verify=False)
             ## 转换编码
             html_text.encoding = html_text.apparent_encoding
             html_text = html_text.text
@@ -341,7 +341,7 @@ if __name__ == '__main__':
                 ip_i = args.proxy.find('//') + 2
                 ip = args.proxy[ip_i:]
                 os.system('start cmd /k "d: & cd d:/test/ & ' + args.xray + ' webscan --listen '+ ip +' --baidu.html ')
-                time.sleep(5)
+                time.sleep(10)
                 print('6')
                 with  open(args.f, 'r', encoding='utf-8') as fp:
                     z = len(fp.readlines())
